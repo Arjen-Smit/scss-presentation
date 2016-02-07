@@ -1,0 +1,9 @@
+$multiplier: 2px !default;
+
+@function increase-size($n) {
+  @return $n * $multiplier;
+}
+
+h1 {
+  font-size: increase-size(20);
+}

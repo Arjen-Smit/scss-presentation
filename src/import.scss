@@ -1,11 +1,15 @@
+$red: #f00;
+$white: #fff;
+$black: #000;
+
 /* Import zonder overwrite */
 @import 'import/snippets/button';
 
 /* Import met enkele overwrite */
-$button-background-color: #f00;
+$button-background-color: $red;
 @import 'import/snippets/button';
 
 /* Import met meerdere overwrites */
-$button-background-color: #fff;
-$button-text-color: #000;
+$button-background-color: $white;
+$button-text-color: $black;
 @import 'import/snippets/button';
