@@ -1,0 +1,11 @@
+/* Import zonder overwrite */
+@import 'import/snippets/button';
+
+/* Import met enkele overwrite */
+$button-background-color: #f00;
+@import 'import/snippets/button';
+
+/* Import met meerdere overwrites */
+$button-background-color: #fff;
+$button-text-color: #000;
+@import 'import/snippets/button';

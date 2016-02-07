@@ -1,0 +1,21 @@
+h1 {
+  /* Mixin met default parameter */
+  color: lime;
+}
+
+h2 {
+  /* Mixin met ingestelde parameter */
+  color: blue;
+}
+
+h3 {
+  /* Mixin met gebruik van content */
+  color: lime;
+  font-weight: normal;
+}
+
+h4 {
+  /* Mixin met ingestelde parameter en gebruik van content */
+  color: red;
+  text-decoration: underline;
+}

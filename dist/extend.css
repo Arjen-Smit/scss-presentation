@@ -1,0 +1,15 @@
+.bold, h2 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h1, h2 {
+  color: lime;
+}

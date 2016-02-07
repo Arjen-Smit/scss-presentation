@@ -1,0 +1,12 @@
+$button-background-color: #00f !default;
+$button-text-color: #fff !default;
+$button-border-color: #000 !default;
+
+.button {
+  background-color: $button-background-color;
+  color: $button-text-color;
+  border: 1px solid $button-border-color;
+  &::hover {
+    background-color: darken($button-background-color, 20);
+  }
+}

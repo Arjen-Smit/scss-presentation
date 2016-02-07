@@ -1,0 +1,32 @@
+/* Import zonder overwrite */
+.button {
+  background-color: #00f;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.button::hover {
+  background-color: #000099;
+}
+
+/* Import met enkele overwrite */
+.button {
+  background-color: #f00;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.button::hover {
+  background-color: #990000;
+}
+
+/* Import met meerdere overwrites */
+.button {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.button::hover {
+  background-color: #cccccc;
+}

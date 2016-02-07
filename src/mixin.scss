@@ -1,0 +1,29 @@
+@mixin mymixin($color: lime) {
+  color: $color;
+
+  @content;
+}
+
+h1 {
+  /* Mixin met default parameter */
+  @include mymixin;
+}
+
+h2 {
+  /* Mixin met ingestelde parameter */
+  @include mymixin(blue);
+}
+
+h3 {
+  /* Mixin met gebruik van content */
+  @include mymixin {
+    font-weight: normal;
+  };
+}
+
+h4 {
+  /* Mixin met ingestelde parameter en gebruik van content */
+  @include mymixin(red) {
+    text-decoration: underline;
+  };
+}
