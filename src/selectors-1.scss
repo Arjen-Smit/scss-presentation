@@ -1,0 +1,13 @@
+.wrapper {
+  .header {
+    color: red;
+
+    .bluepage & {
+      color: blue;
+    }
+
+    &.bold {
+      font-weight: bold;
+    }
+  }
+}
