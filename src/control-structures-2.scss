@@ -1,28 +1,4 @@
-$themes: basic profesional;
-
-$theme-basic: (
-    'link-color': #00f,
-    'border-color': #ff0,
-);
-
-$theme-profesional: (
-    'link-color': #f00,
-    'border-color': #0ff,
-);
-
-$theme-names: (
-    'basic': $theme-basic,
-    'profesional': $theme-profesional,
-);
-
-@function theme-value($theme: 'basic', $setting: 'link-color') {
-    @if map-has-key($theme-names, $theme) {
-        $curr-theme: map-get($theme-names, $theme);
-        @if map-has-key($curr-theme, $setting) {
-            @return map-get($curr-theme, $setting);
-        }
-    }
-}
+@import 'control-structure/themes';
 
 .maincontent {
     a {
