@@ -1,0 +1,11 @@
+@for $i from 1 through 3 {
+  .item:nth-child(#{$i}) {
+    background-color: darken(#f00, $i * 10);
+  }
+}
+
+$i: 4;
+@while $i > 0 {
+  .item-#{$i} { width: 20px * $i; }
+  $i: $i - 2;
+}

@@ -1,0 +1,19 @@
+.item:nth-child(1) {
+  background-color: #cc0000;
+}
+
+.item:nth-child(2) {
+  background-color: #990000;
+}
+
+.item:nth-child(3) {
+  background-color: #660000;
+}
+
+.item-4 {
+  width: 80px;
+}
+
+.item-2 {
+  width: 40px;
+}
