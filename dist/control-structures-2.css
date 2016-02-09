@@ -1,0 +1,9 @@
+.theme-basic .maincontent a {
+  color: #00f;
+  border: 1px solid #ff0;
+}
+
+.theme-profesional .maincontent a {
+  color: #f00;
+  border: 1px solid #0ff;
+}

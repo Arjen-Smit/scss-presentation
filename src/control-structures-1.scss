@@ -1,0 +1,28 @@
+@mixin example($padding, $bold: false) {
+    padding: if($padding >= 5px, $padding, 5px);
+    @if $bold == true {
+        font-weight: bold;
+    } @else if $bold != false {
+        font-weight: $bold;
+    }
+}
+
+/* mixin with padding of 2px */
+p {
+    @include example(2px);
+}
+
+/* mixin with padding of 5px */
+h1 {
+    @include example(5px);
+}
+
+/* mixin with padding of 10px and $bold set to true */
+h2 {
+    @include example(10px, true);
+}
+
+/* mixin with padding and a numbered fontweight */
+h3 {
+    @include example(10px, 600);
+}

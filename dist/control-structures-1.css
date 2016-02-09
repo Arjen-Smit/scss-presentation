@@ -1,0 +1,21 @@
+/* mixin with padding of 2px */
+p {
+  padding: 5px;
+}
+
+/* mixin with padding of 5px */
+h1 {
+  padding: 5px;
+}
+
+/* mixin with padding of 10px and $bold set to true */
+h2 {
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* mixin with padding and a numbered fontweight */
+h3 {
+  padding: 10px;
+  font-weight: 600;
+}
