@@ -1,8 +1,22 @@
-@import "media/responsive";
+@import 'media/responsive';
 
+.main {
+  width: 100%;
+  @media screen and (min-width: 300px) {
+    width: percentage( 1 / 2 );
+  }
+
+  @include respond-min(600px) {
+    width: percentage( 2 / 3 );
+  }
+}
 .sidebar {
-  width: 300px;
-  @media screen and (orientation: landscape) {
-    width: 500px;
+  width: 100%;
+  @media screen and (min-width: 300px) {
+    width: percentage( 1 / 2 );
+  }
+
+  @include respond-min(600px) {
+    width: percentage( 1 / 3 );
   }
 }

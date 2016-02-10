@@ -1,9 +1,31 @@
-.sidebar {
-  width: 300px;
+.main {
+  width: 100%;
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (min-width: 300px) {
+  .main {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .main {
+    width: 66.66667%;
+  }
+}
+
+.sidebar {
+  width: 100%;
+}
+
+@media screen and (min-width: 300px) {
   .sidebar {
-    width: 500px;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .sidebar {
+    width: 33.33333%;
   }
 }
