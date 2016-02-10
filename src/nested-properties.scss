@@ -1,0 +1,22 @@
+p {
+  padding: {
+    top: 10px;
+    bottom: 10px;
+    left: 5px;
+    right: 5px;
+  }
+
+  font: {
+    family: Arial;
+    size: 12px;
+    weight: normal;
+    style: italic;
+  }
+
+  border: {
+    width: 20px;
+    radius: 5px;
+    style: solid;
+    color: #f00;
+  }
+}

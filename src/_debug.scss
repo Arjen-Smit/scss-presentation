@@ -1,0 +1,12 @@
+@each $name, $color in  ('rood', #f00),
+                        ('groen', #0f0),
+                        ('blauw', #00f) {
+                          .item-#{$name} {
+                            @debug $name, $color;
+                            color: $color;
+                            content: $name;
+                            @if $name == 'rood' {
+                              @warn " #{$name} was gebruikt"
+                            }
+                          }
+                        }
