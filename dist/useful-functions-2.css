@@ -1,0 +1,7 @@
+a {
+  color: #008;
+}
+
+a:hover {
+  border: 1px solid #000;
+}

@@ -1,0 +1,21 @@
+$config: (
+    'text-color': #ccc,
+    'hover-color': #008,
+);
+$aditional-config: (
+    'text-color': #008,
+    'border': #000,
+);
+$config: map-merge($config, $aditional-config);
+
+a {
+    color: map-get($config, 'text-color');
+    &:hover {
+        @if map-get($config, 'text-color') != map-get($config, 'hover-color') {
+            color: map-get($config, 'hover-color');
+        }
+        @if map-has-key($config, 'border') {
+            border: 1px solid map-get($config, 'border');
+        }
+    }
+}
