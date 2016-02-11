@@ -1,7 +1,11 @@
 .error {
   width: 33.33333%;
-  padding: 2px;
+  padding: 33px;
   color: #cc0000;
   border: 1px solid cyan;
-  background: olive;
+  /*
+    min() max()
+    floor() ceil() round()
+    typeof()
+    */
 }
