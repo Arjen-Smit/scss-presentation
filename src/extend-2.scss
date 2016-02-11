@@ -1,0 +1,15 @@
+.content {
+    .page {
+        color: red;
+        /* fake import */
+        @at-root %something-special {
+            padding: 20px;
+        }
+        /* fake import */
+        @extend %something-special;
+    }
+}
+
+.span {
+    @extend %something-special;
+}

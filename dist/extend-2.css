@@ -1,0 +1,9 @@
+.content .page {
+  color: red;
+  /* fake import */
+  /* fake import */
+}
+
+.content .page, .span {
+  padding: 20px;
+}
