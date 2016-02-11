@@ -1,15 +1,6 @@
-$config: (
-    'text-color': #ccc,
-    'hover-color': #008,
-);
-$aditional-config: (
-    'text-color': #008,
-    'border': #000,
-);
-$config: map-merge($config, $aditional-config);
-
-a {
+@mixin link-style($config) {
     color: map-get($config, 'text-color');
+
     &:hover {
         @if map-get($config, 'text-color') != map-get($config, 'hover-color') {
             color: map-get($config, 'hover-color');
@@ -18,4 +9,22 @@ a {
             border: 1px solid map-get($config, 'border');
         }
     }
+}
+
+$config: (
+    'text-color': #ccc,
+    'hover-color': #008,
+);
+
+$additional-config: (
+    'text-color': #008,
+    'border': #000,
+);
+
+.normal {
+    @include link-style($config);
+}
+
+.aditional {
+    @include link-style(map-merge($config, $additional-config));
 }

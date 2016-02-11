@@ -1,7 +1,15 @@
-a {
+.normal {
+  color: #ccc;
+}
+
+.normal:hover {
   color: #008;
 }
 
-a:hover {
+.aditional {
+  color: #008;
+}
+
+.aditional:hover {
   border: 1px solid #000;
 }
