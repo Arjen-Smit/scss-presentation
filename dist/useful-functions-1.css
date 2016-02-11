@@ -1,6 +1,7 @@
 .error {
   width: 33.33333%;
+  padding: 2px;
   color: #cc0000;
-  border: 1px solid #ff3333;
-  background-color: #1ae600;
+  border: 1px solid cyan;
+  background: olive;
 }

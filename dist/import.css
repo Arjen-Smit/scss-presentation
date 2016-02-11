@@ -30,18 +30,3 @@
 .button::hover {
   background-color: #cccccc;
 }
-
-.item-rood {
-  color: #f00;
-  content: "rood";
-}
-
-.item-groen {
-  color: #0f0;
-  content: "groen";
-}
-
-.item-blauw {
-  color: #00f;
-  content: "blauw";
-}
